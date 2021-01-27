@@ -5,7 +5,6 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     private const float LifeSpan = 3f;
-    private float timer = 0f;
 
     private void Update() {
         StartCoroutine (DestroyIn3Seconds());
