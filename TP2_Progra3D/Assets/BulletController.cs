@@ -19,7 +19,7 @@ public class BulletController : MonoBehaviour
     {
         if (other.gameObject.name=="Body")
         {
-            Destroy (other.gameObject);       
+            Destroy (other.transform.parent.gameObject);       
         }
         else 
         {

@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform spawnPointTransform;
     
     [SerializeField] private float speed = 0.1f;
-    [SerializeField] private float cameraSensibility = 1f;
+    [SerializeField] private float cameraSensibility = 100f;
 
     private void Start()
     {
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
                 spawnPointTransform.position,
                 Quaternion.identity,
                 spheresHolderTransform);
-            sphere.GetComponent<Rigidbody>().AddForce(cameraTransform.forward * 500f);
+            sphere.GetComponent<Rigidbody>().AddForce(cameraTransform.forward * 1000f);
         }
     }
 
