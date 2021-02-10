@@ -9,10 +9,6 @@ Mario : Ne t'inquiète pas, je vais la retrouver et tout ira bien.
 Luigi : Tu ne devrais pas partir les mains vides alors!
 Mario : Tu as raison! Je vais prendre quelques carapaces.
 Luigi : Tiens, tu préfères prendre des rouges ou des bleus??
-Mario :  *CHOIX* + pop image carapace
-Mario : Merci beaucoup! Tu ne veux pas venir avec moi?
-Luigi : *CHOIX* "??Luigi y aller ou rester attendre ici??"
-Luigi : 1 Bonne idée, à deux nous la retrouverons plus vite!
-Luigi : 2 Non je ne suis pas très rassuré… je préfère rester ici au cas où elle reviendrait tu ne crois pas?
-Mario : 1 Aller ne perdons pas de temps, c'est parti!!
-Mario : 2 Je comprend, bonne idée! J'y vais, c'est parti!!
+Mario : Je vais prendre les rouges! Tu ne veux pas venir avec moi?
+Luigi : Bonne idée, à deux nous la retrouverons plus vite!
+Mario : Allez ne perdons pas de temps, c'est parti!!
