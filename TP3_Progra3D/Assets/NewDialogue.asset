@@ -19,7 +19,7 @@ MonoBehaviour:
   - "Luigi : Oh non, tu penses qu'il lui ait arriv\xE9 quelque chose?"
   - "Mario : Je ne sais pas mais j'ai entendu dire que Bowser trainait dans le coin\u2026"
   - 'Luigi : Bowser?? Il est si dangereux!'
-  - 'Mario : Je vais partir a sa recherche!'
+  - "Mario : Je vais partir \xE0 sa recherche!"
   - 'Luigi : Tu es fou, ce n''est pas prudent!'
   - "Mario : Ne t'inqui\xE8te pas, je vais la retrouver et tout ira bien."
   - 'Luigi : Tu ne devrais pas partir les mains vides alors!'
