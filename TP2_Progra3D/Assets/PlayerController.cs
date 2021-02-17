@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform spawnPointTransform;
     
     [SerializeField] private float speed = 0.1f;
-    [SerializeField] private float cameraSensibility = 100f;
+    [SerializeField] private float cameraSensibility = 0.1f;
 
     private void Start()
     {

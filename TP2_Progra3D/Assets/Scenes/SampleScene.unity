@@ -317,7 +317,7 @@ MonoBehaviour:
   spheresHolderTransform: {fileID: 0}
   spawnPointTransform: {fileID: 1683235404}
   speed: 0.1
-  cameraSensibility: 0.1
+  cameraSensibility: 1
 --- !u!114 &276334133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15a261a8d3356841b38767c6bac0037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyList: []
 --- !u!1 &363165348
 GameObject:
   m_ObjectHideFlags: 0
