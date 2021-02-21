@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20800f93-968c-414f-b09d-d057db0b3364" name="Default Changelist" comment="" />
+    <list default="true" id="20800f93-968c-414f-b09d-d057db0b3364" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/CueStick.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CueStick.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projet_Billard_AMG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projet_Billard_AMG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BougerCanne.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BougerCanne.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RollingBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RollingBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +19,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.193/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/Controllers/CueBallController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.37450/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/Singleton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.48312/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/EventHandlers/CueBallActionEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.45219/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/Managers/EventManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/BougerCanne.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.39297/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/UIControllers/PlayerUIController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.34898/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.48847/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/EventHandlers/GameInputEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.47736/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/EventHandlers/CueActionEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa26048.40964/3DPool_Game UNITY/3DPoolGame/Assets/Scripts/Managers/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -62,6 +79,8 @@
       <updated>1613652524801</updated>
       <workItem from="1613652605449" duration="4787000" />
       <workItem from="1613916681112" duration="1443000" />
+      <workItem from="1613918279358" duration="8037000" />
+      <workItem from="1613926882661" duration="68000" />
     </task>
     <servers />
   </component>
