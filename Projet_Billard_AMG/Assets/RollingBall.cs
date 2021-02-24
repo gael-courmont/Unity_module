@@ -8,15 +8,7 @@ public class RollingBall : MonoBehaviour
     [SerializeField] private Transform cameraTransform;
     public Rigidbody rb;
     private GameObject canne;
-<<<<<<< Updated upstream:Projet_Billard_AMG/Assets/RollingBall.cs
     private Vector3 min_vel=new Vector3(1f,1f,1f);
-=======
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody>();
-        canne=GameObject.Find("Canne");
-    }
->>>>>>> Stashed changes:Projet_Billard_AMG/Assets/Scripts/RollingBall.cs
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -34,3 +26,4 @@ public class RollingBall : MonoBehaviour
 
     }
 }
+
