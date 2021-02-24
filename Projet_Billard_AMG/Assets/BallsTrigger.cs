@@ -18,7 +18,7 @@ public class BallsTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoretext.text = "Boules rentrées : "+Score;
+        scoretext.text = "Score: "+Score;
     }
     
     private void OnTriggerEnter(Collider other)
