@@ -14,6 +14,7 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/RollingBall.cs" />
       <option value="$PROJECT_DIR$/Assets/BougerCanne.cs" />
+      <option value="$PROJECT_DIR$/Assets/WhiteSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/BallsTrigger.cs" />
     </changedPaths>
   </component>
@@ -68,6 +69,7 @@
       <workItem from="1613916681112" duration="1443000" />
       <workItem from="1614118116862" duration="2208000" />
       <workItem from="1614168659216" duration="303000" />
+      <workItem from="1614172976022" duration="2022000" />
     </task>
     <servers />
   </component>

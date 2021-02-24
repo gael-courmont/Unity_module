@@ -11,10 +11,14 @@ public class WhiteSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SpawnBall();
+    }
+
+    public void SpawnBall()
+    {
         GameObject ball = (GameObject) Instantiate( Resources.Load("BallWhite"), new Vector3(baseX,baseY,baseZ),Quaternion.identity);
         ball.transform.localScale = new Vector3(scale, scale, scale);
         ball.name = "WhiteBall";
     }
-
 
 }

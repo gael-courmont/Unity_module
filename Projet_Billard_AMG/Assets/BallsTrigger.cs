@@ -8,7 +8,8 @@ public class BallsTrigger : MonoBehaviour
     
     private int Score;
     [SerializeField] private TextMeshProUGUI scoretext;
-    
+
+    public WhiteSpawn ScriptSpawnWhiteBall;
     void Start()
     {
         Score = 0;
@@ -32,7 +33,7 @@ public class BallsTrigger : MonoBehaviour
         //Respawn white ball
         if (other.gameObject.name == "BallWhite")
         {
-            //WhiteSpawn.SendMessageUpwards("Start");
+            ScriptSpawnWhiteBall.SpawnBall();
         }
         else
         {
