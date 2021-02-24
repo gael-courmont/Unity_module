@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43679446, g: 0.48442072, b: 0.56467444, a: 1}
+  m_IndirectSpecularColor: {r: 0.43679422, g: 0.48442078, b: 0.5646741, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 608594229}
   - component: {fileID: 608594227}
   - component: {fileID: 608594228}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlanPointsTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
