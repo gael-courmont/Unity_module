@@ -45,8 +45,9 @@ public class BougerCanne : MonoBehaviour
     private void OnEnable()
     {
         puissance = 0;
-        rb.constraints = RigidbodyConstraints.FreezeRotation;
         BlancheRB.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        rb.velocity = Vector3.zero;
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
         Debug.Log("enable can");
         have_shoot = false;
         rb.transform.rotation = quaternion.identity;
@@ -58,7 +59,7 @@ public class BougerCanne : MonoBehaviour
     {
         Debug.Log("shoot");
         Debug.Log(puissance);
-        rb.AddForce(rb.transform.forward * (puissance*1000f));
+        rb.AddForce(rb.transform.forward * (puissance*100f));
     }
     private void FixedUpdate()
     {  
