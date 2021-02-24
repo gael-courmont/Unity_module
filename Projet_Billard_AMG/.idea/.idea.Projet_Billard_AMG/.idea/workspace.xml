@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20800f93-968c-414f-b09d-d057db0b3364" name="Default Changelist" comment="" />
+    <list default="true" id="20800f93-968c-414f-b09d-d057db0b3364" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projet_Billard_AMG/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projet_Billard_AMG/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projet_Billard_AMG/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projet_Billard_AMG/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Projet_Billard_AMG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Projet_Billard_AMG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BougerCanne.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BougerCanne.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CueStick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CueStick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/BallWhite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/BallWhite.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RollingBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RollingBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WhiteSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WhiteSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +23,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/WhiteSpawn.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/BallsTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/WhiteSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/RollingBall.cs" />
       <option value="$PROJECT_DIR$/Assets/BougerCanne.cs" />
-      <option value="$PROJECT_DIR$/Assets/WhiteSpawn.cs" />
-      <option value="$PROJECT_DIR$/Assets/BallsTrigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oegY6tuKj1JSzmBTosHPibR1iu" />
@@ -70,6 +86,7 @@
       <workItem from="1614118116862" duration="2208000" />
       <workItem from="1614168659216" duration="303000" />
       <workItem from="1614172976022" duration="2022000" />
+      <workItem from="1614197806347" duration="790000" />
     </task>
     <servers />
   </component>
@@ -78,6 +95,9 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
