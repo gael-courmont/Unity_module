@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
@@ -10,51 +11,84 @@ public class BougerCanne : MonoBehaviour
 {
     public Rigidbody rb;
     private Transform Blanche;
-    [SerializeField] private CapsuleCollider collider;
-    [SerializeField] private Material highlightmat;
-    private bool isDragging;
+    [SerializeField] private Rigidbody BlancheRB;
+    [SerializeField] private BoxCollider collider;
+    private bool isDraggingPosition;
+    private bool isDraggingRotation;
     private Vector3 MousePosition;
+    private Vector3 Initialposition;
+    private bool have_shoot;
+    private float puissance;
+    //[SerializeField] Material 
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        isDragging = false;
+        isDraggingPosition = false;
+        isDraggingRotation = false;
+        Initialposition = this.transform.position;
+        puissance = 0;
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        rb.isKinematic = false;
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        transform.position = Blanche.position + new Vector3(-7.1f, 0f, 0f);
-        this.gameObject.SetActive(false);
+        if (have_shoot)
+        {
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            BlancheRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionY;
+            rb.isKinematic = true;
+            gameObject.SetActive(false);
+        }
+
     }
 
-    private void replace()
+    private void OnEnable()
     {
-        transform.position = new Vector3(-7f, 0f, 0f);
+        puissance = 0;
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
+        BlancheRB.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        Debug.Log("enable can");
+        have_shoot = false;
+        rb.transform.rotation = quaternion.identity;
+        rb.transform.rotation=Quaternion.AngleAxis(-90,Vector3.up);
+        rb.transform.position = BlancheRB.transform.position + new Vector3(100f,0f,0f);
     }
-    private void Shoot()
+
+    private void shoot()
     {
-        Vector3 deltaPosition =
-            new Vector3(transform.position.x, 0f, 0f) * Input.GetAxis("Horizontal");
-        rb.AddForce(deltaPosition*1000f);
-        
+        Debug.Log("shoot");
+        Debug.Log(puissance);
+        rb.AddForce(rb.transform.forward * (puissance*1000f));
     }
     private void FixedUpdate()
-    {
-
-        Vector3 deltaPosition =
-            new Vector3(transform.position.x, 0f, 0f) * Input.GetAxis("Horizontal");
-        rb.AddForce(deltaPosition*100f);
-
-
-        if (Input.GetMouseButton(0))
+    {  
+        Shader.SetGlobalFloat("_Puissance",puissance);
+        
+        
+        if(Input.GetButton("Fire1"))
         {
+            
+            puissance += 1;
+            have_shoot = true;
+            if (puissance == 99)
+            {
+                shoot();
+            }
+        }
+
+        if (Input.GetButtonUp("Fire1") & have_shoot)
+        {
+            shoot();
+        }
+        if(Input.GetMouseButton(1))
+        {
+            rb.isKinematic = true;
+            have_shoot = true;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit,1000f,LayerMask.GetMask("canne")))
             {
-                isDragging = true;
+                isDraggingRotation = true;
                 Debug.Log(hit.transform.name);
                 // Stocker position actuelle de la souris
                 MousePosition = Input.mousePosition;
@@ -62,14 +96,40 @@ public class BougerCanne : MonoBehaviour
 
             }
         }
+        else
+        {
+            rb.isKinematic = false;
+            isDraggingRotation = false;
+        }
 
-        if (isDragging)
+        if (isDraggingPosition)
         {
             Vector3 difference = Input.mousePosition - MousePosition;
-            Debug.Log(difference);
+            
+            
+               
+                rb.MovePosition(new Vector3(rb.position.x + difference.x * 0.01f,rb.position.y,rb.position.z));
+            
+            
+            
+
+            
             // check difference position actuelle initiale
             // par exemple vers la droite = queue se rapproche (ça suppose que la caméra regarde toujours avec le même angle la canne, sinon il faut faire du produit scalaire/vectoriel)
+
+        }
+
+        if (isDraggingRotation)
+        {
             
+            Vector3 difference = Input.mousePosition - MousePosition;
+            Debug.Log("rotating");
+            //Quaternion moveRotation = Quaternion.RotateTowards(Quaternion.Euler(0, 0, Mathf.Floor(BlancheRB.rigidbody.transform.rotation.eulerAngles.z)), Quaternion.Euler(0, 0, endRotation), Time.deltaTime * RotateSpeed)
+            BlancheRB.angularVelocity = BlancheRB.transform.up * difference.y;
+        }
+        else
+        {
+            BlancheRB.angularVelocity=Vector3.zero;
         }
 
 

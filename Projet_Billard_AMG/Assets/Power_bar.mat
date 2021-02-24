@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Power_bar
+  m_Shader: {fileID: -6465566751694194690, guid: 6b835d96b8515b54e9a9e72c58746e75, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_547249578d364a82a7d1987c5c6f3fa8: -1.04
+    - Vector1_a19deae58b984a3e934a84e18dae5703: 100
+    - _Puissance: 10.8
+    m_Colors:
+    - Color_35ce0f72052e4fe79996d941bee07d07: {r: 0.07714517, g: 0.9528302, b: 0.04943931, a: 0}
+    - Color_e76cfcf09e184d34898c790953e91d89: {r: 0.9622642, g: 0.05900679, b: 0.05900679, a: 0}
+    - Vector3_fc26df7865cf4f2cb0f0e4687178c60d: {r: 0, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
