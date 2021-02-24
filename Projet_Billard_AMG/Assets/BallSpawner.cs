@@ -25,7 +25,7 @@ public class BallSpawner : MonoBehaviour
             float c = baseZ + j * 2 * rayonBoule;
             GameObject ball = (GameObject) Instantiate( listBall.ballListget[i], new Vector3(a,b,c),Quaternion.identity);
             ball.transform.localScale = new Vector3(scale, scale, scale);
-            ball.name = "Ball" + i;
+            ball.name = "Ball" + i + 1;
             i++;
         }
         for (int j = 0; j < 4; j++){
@@ -34,7 +34,7 @@ public class BallSpawner : MonoBehaviour
             float c = baseZ + j * 2 * rayonBoule + rayonBoule;
             GameObject ball = (GameObject) Instantiate( listBall.ballListget[i], new Vector3(a,b,c),Quaternion.identity);
             ball.transform.localScale = new Vector3(scale, scale, scale);
-            ball.name = "Ball" + i;
+            ball.name = "Ball" + i + 1;
             i++;
         }
         for (int j = 0; j < 3; j++){
@@ -43,7 +43,7 @@ public class BallSpawner : MonoBehaviour
             float c = baseZ + j * 2 * rayonBoule + 2 * rayonBoule;
             GameObject ball = (GameObject) Instantiate(listBall.ballListget[i], new Vector3(a,b,c),Quaternion.identity);
             ball.transform.localScale = new Vector3(scale, scale, scale);
-            ball.name = "Ball" + i;
+            ball.name = "Ball" + i + 1;
             i++;
         }
         for (int j = 0; j < 2; j++){
@@ -52,7 +52,7 @@ public class BallSpawner : MonoBehaviour
             float c = baseZ + j * 2 * rayonBoule + 3 * rayonBoule;
             GameObject ball = (GameObject) Instantiate(listBall.ballListget[i], new Vector3(a,b,c),Quaternion.identity);
             ball.transform.localScale = new Vector3(scale, scale, scale);
-            ball.name = "Ball" + i;
+            ball.name = "Ball" + i + 1;
             i++;
         }
         for (int j = 0; j < 1; j++){
@@ -61,7 +61,7 @@ public class BallSpawner : MonoBehaviour
             float c = baseZ + j * 2 * rayonBoule + 4 * rayonBoule;
             GameObject ball = (GameObject) Instantiate(listBall.ballListget[i], new Vector3(a,b,c),Quaternion.identity);
             ball.transform.localScale = new Vector3(scale, scale, scale);
-            ball.name = "Ball" + i;
+            ball.name = "Ball" + i + 1;
             i++;
         }
     }
