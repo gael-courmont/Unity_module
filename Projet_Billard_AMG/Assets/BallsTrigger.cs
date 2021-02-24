@@ -8,6 +8,7 @@ public class BallsTrigger : MonoBehaviour
     
     private int Score;
     [SerializeField] private TextMeshProUGUI scoretext;
+
     public WhiteSpawn ScriptSpawnWhiteBall;
     void Start()
     {
@@ -17,20 +18,20 @@ public class BallsTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoretext.text = "Balles empochées : "+Score;
+        scoretext.text = "Score: "+Score;
     }
     
-private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         //Trigger fallen ball and its number
         Debug.Log("fallen ball : ");
         Debug.Log(other.gameObject.name);
 
-        //Destroy fallen ball and add it in score UI
+        //Destroy fallen ball and add it in score UI ***TO DO***
         Destroy(other.gameObject);
         
         //Respawn white ball
-        if (other.gameObject.name == "WhiteBall")
+        if (other.gameObject.name == "BallWhite")
         {
             ScriptSpawnWhiteBall.SpawnBall();
         }

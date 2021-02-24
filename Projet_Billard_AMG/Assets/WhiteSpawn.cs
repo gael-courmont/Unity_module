@@ -12,7 +12,6 @@ public class WhiteSpawn : MonoBehaviour
     void Start()
     {
         SpawnBall();
-        CanneSpawn();
     }
 
     public void SpawnBall()
@@ -20,17 +19,6 @@ public class WhiteSpawn : MonoBehaviour
         GameObject ball = (GameObject) Instantiate( Resources.Load("BallWhite"), new Vector3(baseX,baseY,baseZ),Quaternion.identity);
         ball.transform.localScale = new Vector3(scale, scale, scale);
         ball.name = "WhiteBall";
-<<<<<<< Updated upstream:Projet_Billard_AMG/Assets/WhiteSpawn.cs
-=======
-        
-    }
-
-    public void CanneSpawn()
-    {
-        GameObject canne = (GameObject) Instantiate( Resources.Load("CueStick"));
-        canne.transform.localScale = new Vector3(scaleCannex, scaleCanney, scaleCannez);
-        canne.name = "Canne";
->>>>>>> Stashed changes:Projet_Billard_AMG/Assets/Scripts/WhiteSpawn.cs
     }
 
 }
