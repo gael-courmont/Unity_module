@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/.idea.bILLARD8VERSION8CHANGEMENT.iml
+/contentModel.xml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\github\3d_billard\Tps_Progra3D-d4a2cec8992378c0fbb159bbac7dd4da6ad5780e\bILLARD8VERSION8CHANGEMENT\.idea\.idea.bILLARD8VERSION8CHANGEMENT\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
