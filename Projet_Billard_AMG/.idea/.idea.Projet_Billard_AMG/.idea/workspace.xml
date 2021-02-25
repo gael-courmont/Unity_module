@@ -16,6 +16,7 @@
       <option value="$PROJECT_DIR$/Assets/BougerCanne.cs" />
       <option value="$PROJECT_DIR$/Assets/WhiteSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/BallsTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BougerCanne.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oegY6tuKj1JSzmBTosHPibR1iu" />
@@ -38,6 +39,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../3d_build\Projet_Billard_AMG.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\github\3d_billard\3d_build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -70,6 +79,8 @@
       <workItem from="1614118116862" duration="2208000" />
       <workItem from="1614168659216" duration="303000" />
       <workItem from="1614172976022" duration="2988000" />
+      <workItem from="1614223316337" duration="1000" />
+      <workItem from="1614224067791" duration="714000" />
     </task>
     <servers />
   </component>
