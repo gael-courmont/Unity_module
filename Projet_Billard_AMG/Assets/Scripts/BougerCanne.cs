@@ -21,7 +21,7 @@ public class BougerCanne : MonoBehaviour
     private Camera Camera_Active;
 
     
-    
+    // quand collision avec balle blance on désactive canne
     private void OnCollisionEnter(Collision other)
     {
         Debug.Log("canne collision with "+other.transform.name);
@@ -32,7 +32,7 @@ public class BougerCanne : MonoBehaviour
     
 
     
-    
+    // s'effectue au début du jeu et quand on fait réapparaitre la canne
     private void OnEnable()
     
     {
@@ -61,7 +61,7 @@ public class BougerCanne : MonoBehaviour
         Camera_Active = Camera.allCameras[0];
         Shader.SetGlobalFloat("_Puissance",puissance);
         
-        
+        // gestion de la puissance de tire
         if(Input.GetButton("Fire1") & !have_shoot)
         {
             
@@ -74,11 +74,13 @@ public class BougerCanne : MonoBehaviour
             have_shoot = true;
             shoot();
         }
+        // raycast de la souris
         if(Input.GetMouseButton(1))
         {
             rb.isKinematic = true;
             var ray = Camera_Active.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+            // si on attrape la canne
             if (Physics.Raycast(ray, out hit,1000f,LayerMask.GetMask("canne")))
             {
                 isDraggingRotation = true;
@@ -95,12 +97,13 @@ public class BougerCanne : MonoBehaviour
             isDraggingRotation = false;
         }
         
-
+        // orientation de la canne
         if (isDraggingRotation)
         {
-            
+            // difference entre la position initiale et actuelle de la souris
             Vector3 difference = Input.mousePosition - MousePosition;
             Debug.Log("rotating");
+            // rotation de la canne autour de la balle blanche en fonction de cette difference
             position = new Vector3(BlancheRB.position.x+ 70f * Mathf.Cos(2 * Mathf.PI * difference.x*0.001f), BlancheRB.position.y, BlancheRB.position.z+ 70f *Mathf.Sin(2 * Mathf.PI*difference.x*0.001f));
             rb.transform.position = position;
             rb.transform.LookAt(BlancheRB.transform);

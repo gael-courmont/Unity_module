@@ -7,25 +7,19 @@ public class RollingBall : MonoBehaviour
 {
     private Rigidbody blancheRB;
     private GameObject canne;
-    private void Awake()
-    {
-        
 
-        
-
-    }
     private void Start()
     {
-        //canne=GameObject.Find("Canne");
         blancheRB = GetComponent<Rigidbody>();
 
 
     }
     private void Update()
     {
-        
+        // faire réapparaitre canne
         if (Input.GetButtonUp("Jump") & blancheRB.velocity.magnitude<1)
         {
+            // chercher canne
             foreach (GameObject go in Resources.FindObjectsOfTypeAll<GameObject>())
             { 
                 if (go.name == "Canne")
