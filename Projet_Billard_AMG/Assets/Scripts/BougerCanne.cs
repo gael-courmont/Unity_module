@@ -54,7 +54,7 @@ public class BougerCanne : MonoBehaviour
     private void shoot()
     {
         
-        rb.AddForce(rb.transform.forward * (puissance*30f));
+        rb.AddForce(rb.transform.forward * (puissance*70f));
     }
     private void Update()
     {  

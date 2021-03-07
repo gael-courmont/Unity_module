@@ -16,7 +16,9 @@
       <option value="$PROJECT_DIR$/Assets/BougerCanne.cs" />
       <option value="$PROJECT_DIR$/Assets/WhiteSpawn.cs" />
       <option value="$PROJECT_DIR$/Assets/BallsTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ball_stoping.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BougerCanne.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/RollingBall.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oegY6tuKj1JSzmBTosHPibR1iu" />
@@ -81,6 +83,7 @@
       <workItem from="1614172976022" duration="2988000" />
       <workItem from="1614223316337" duration="1000" />
       <workItem from="1614224067791" duration="714000" />
+      <workItem from="1615128665525" duration="722000" />
     </task>
     <servers />
   </component>

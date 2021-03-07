@@ -24,7 +24,7 @@ public class RollingBall : MonoBehaviour
     private void Update()
     {
         
-        if (Input.GetButtonUp("Jump") & blancheRB.velocity.magnitude==0)
+        if (Input.GetButtonUp("Jump") & blancheRB.velocity.magnitude<1)
         {
             foreach (GameObject go in Resources.FindObjectsOfTypeAll<GameObject>())
             { 

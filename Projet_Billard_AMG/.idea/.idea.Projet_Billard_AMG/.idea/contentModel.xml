@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\gael\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\gael\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Projet_Billard_AMG.529130251.00" t="ExcludeRecursive" />
-    <e p="D:\github\3d_billard\Projet_Billard_AMG" t="IncludeRecursive">
+    <e p="C:\documents\github\3D_billard_finale\Tps_Progra3D\Projet_Billard_AMG" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -55,5 +53,7 @@
       <e p="Projet_Billard_AMG.sln" t="IncludeFlat" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\gaelc\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\gaelc\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Projet_Billard_AMG.-1923036232.00" t="ExcludeRecursive" />
   </component>
 </project>

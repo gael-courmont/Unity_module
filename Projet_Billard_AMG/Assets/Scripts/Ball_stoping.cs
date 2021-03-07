@@ -13,11 +13,13 @@ public class Ball_stoping : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (BallRb.velocity.magnitude < 3.5f)
+    {   /*
+        if (BallRb.velocity.magnitude < 1.5f)
         {
             BallRb.velocity=Vector3.zero;
             BallRb.angularVelocity=Vector3.zero;
         }
+        */
     }
+    
 }
